@@ -1,0 +1,42 @@
+.benefits
+    padding: 69px 0 97px 0
+    min-height: 470px
+    background-color: #f6f6f6
+    &__header
+        font-size: 30px
+        line-height: 1.2
+        font-weight: 700
+        color: #0d0d0d
+        text-align: center
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 64px
+    &__card
+        width: 240px
+        height: 233px
+        font-size: 18px
+        line-height: 1.2
+        font-weight: 700
+        color: #0d0d0d
+        display: flex
+        flex-direction: column
+        align-items: center
+        span
+            font-size: 14px
+            line-height: 1.2
+            font-weight: 500
+            text-align: center
+            .running
+                text-decoration: underline
+                color: #ff0000
+    &__img
+        display: block
+        margin-bottom: 37px
+        &_animated
+            animation-name: heartbeat
+            animation-duration: 2s
+            animation-timing-function: ease
+            animation-iteration-count: infinite
+            &:hover
+                animation-play-state: paused

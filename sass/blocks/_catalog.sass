@@ -1,0 +1,46 @@
+.catalog
+    padding-bottom: 102px
+    &__header
+        text-align: center
+        font-size: 30px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        color: #0d0d0d
+    &__tabs
+        list-style-type: none
+        padding: 0
+        margin: 0
+        display: flex
+        justify-content: center
+        margin-top: 70px
+    &__tab 
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        text-align: center
+        font-size: 18px
+        line-height: 48px
+        font-weight: 500
+        text-transform: uppercase
+        color: #6b6b6b
+        margin: 0 5px
+        cursor: pointer
+        transform: skewX(-25deg)
+        transition: 0.3s all
+        &:hover
+            border: none
+            box-shadow: 3px 3px 20px #c70101
+        div
+            transform: skewX(25deg)
+        &_active
+            background-color: #c70101
+            color: #ffffff
+            border: none
+    &__content
+        margin-top: 60px
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        &_active
+            display: flex
